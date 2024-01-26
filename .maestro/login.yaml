@@ -15,4 +15,4 @@ appId: com.qazandoqafood
 - tapOn:
     id: "login-button"
 - scroll
-- runFlows:
+- runFlow: pedido.yaml
