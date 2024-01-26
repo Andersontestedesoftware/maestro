@@ -1,16 +1,28 @@
+# Nome do seu workflow
 name: build
+
+# Definindo quando o workflow será acionado (no caso, em push para o branch master)
 on:
   push:
     branches:
       - master
+
+# Definição do trabalho (job) chamado 'build'
 jobs:
   build:
+    # Sistema operacional no qual o job será executado
     runs-on: ubuntu-latest
+    
+    # Passos (steps) que o job executará
     steps:
+    # Passo para fazer checkout do repositório
     - name: Checkout repository
       uses: actions/checkout@v2
+    
+    # Passo para utilizar a ação 'maestro-cloud'
     - name: Use Maestro Cloud action
       uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
+      # Configurações específicas para a ação, como a chave da API e o arquivo do aplicativo
       with:
         api-key: 32869205-e37a-4504-a596-da09da9e0c6d
         app-file: qaifood.apk
