@@ -1,12 +1,10 @@
 # Nome do seu workflow
 name: build
-
 # Definindo quando o workflow será acionado (no caso, em push para o branch master)
 on:
   push:
     branches:
       - master
-
 # Definição do trabalho (job) chamado 'build'
 jobs:
   build:
