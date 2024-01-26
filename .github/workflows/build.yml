@@ -3,7 +3,14 @@ on:
   push:
     branches:
       - master
-- uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
-  with:
-    api-key: 32869205-e37a-4504-a596-da09da9e0c6d
-    app-file: qaifood.apk
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Use Maestro Cloud action
+      uses: mobile-dev-inc/action-maestro-cloud@v1.1.0
+      with:
+        api-key: 32869205-e37a-4504-a596-da09da9e0c6d
+        app-file: qaifood.apk
