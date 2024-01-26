@@ -1,0 +1,18 @@
+# Definindo o ID do aplicativo
+appId: com.qazandoqafood
+---
+#- runFlow: subflows/wikipedia.yaml
+# Iniciando o aplicativo
+- launchApp
+
+# Verificando se o campo "E-mail" está visível
+- assertVisible: "E-mail"
+
+- tapOn:
+    id: "email"
+- inputText: teste@teste.com
+- tapOn: "password"
+- inputText: 123456
+- tapOn:
+    id: "login-button"
+
