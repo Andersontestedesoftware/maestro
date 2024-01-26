@@ -1,0 +1,21 @@
+appId: com.qazandoqafood
+---
+- tapOn: "Selecione seu endereço..."
+- tapOn: "PERMITIR"
+- scroll
+- tapOn: "Shushi Home"
+- tapOn:
+    point: "95%,43%"
+- tapOn:
+    point: "95%,55%"
+- tapOn:
+    point: "95%,68%"
+- scroll
+- tapOn:
+    point: "95%,71%"
+- tapOn: "open-cart-button"
+- tapOn: "confirm-order-button"
+- "scroll"
+- tapOn: "Dinheiro"
+- tapOn: "FAZER PEDIDO"
+- tapOn: "Pedido realizado"
