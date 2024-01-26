@@ -1,0 +1,5 @@
+# Definindo o ID do aplicativo
+appId: com.qazandoqafood
+---
+
+- launchApp
